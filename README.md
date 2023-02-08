@@ -23,7 +23,7 @@ and SREFI). The datasets are shown in the figure to the right.
 </p>
 
 ## Results
-<img src="figures/accuracy.png width=50% align=right">
+<img src="figures/accuracy.png" width=50% align=right>
 <p>
 To the right is a comparison of training and validation accuracy
 for ResNet50 with only classification accuracy loss versus
