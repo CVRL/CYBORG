@@ -16,18 +16,19 @@ Can deep learning models achieve greater generalization if their training is gui
 ## Data Used
 <img src="figures/data_examples.png" width=50% align="right">
 <p>
-Two types of face image datasets are used: authentic datasets consisting of real images from three sources
-(CelebA-HQ, Flickr-Faces-HQ and FRGCSubset), and synthetic datasets consisting of fake images from seven different generators (ProGAN, StyleGAN,
-StyleGAN2, StyleGAN2-ADA, StyleGAN3, StarGANv2
-and SREFI). The datasets are shown in the figure to the right.
+Two types of face image datasets are used: authentic datasets consisting of real images from three sources (CelebA-HQ, Flickr-Faces-HQ and FRGCSubset), and synthetic datasets consisting of fake images from seven different generators (ProGAN, StyleGAN, StyleGAN2, StyleGAN2-ADA, StyleGAN3, StarGANv2 and SREFI). The datasets are shown in the figure to the right.
 </p>
+<br> <br>
 
 ## Results
 <img src="figures/accuracy.png" width=50% align=right>
 <p>
-To the right is a comparison of training and validation accuracy
-for ResNet50 with only classification accuracy loss versus
-with CYBORG loss. Training accuracy quickly approaches
-100% for both. But CYBORG-trained models achieve significantly higher validation accuracy throughout, indicating
-more effective learning. The shaded area represents ±1 standard deviation of the accuracy by epoch.
+To the right is a comparison of training and validation accuracy for ResNet50 with only classification accuracy loss versus with CYBORG loss. Training accuracy quickly approaches 100% for both. But CYBORG-trained models achieve significantly higher validation accuracy throughout, indicating more effective learning. The shaded area represents ±1 standard deviation of the accuracy by epoch.
+</p>
+<br> <br> <br> <br> <br>
+
+## Model Comparison
+<img src="figures/cams.png" width=30% align=right>
+<p>
+Shown in this figure are the average CAMs across the entire test set for 10 independently trained ResNet50 models in three experimental settings. Each individual plot is the average CAM obtained for all test images for a given model. (Similar results can be observed for other CNN architectures, included into the supp. materials). Compared to the average human annotation, shown in Fig. 4(d), it is clear CYBORG models are guided effectively by human annotation.
 </p>
