@@ -4,7 +4,8 @@
 Aidan Boyd, Patrick Tinsley, Kevin Bowyer, Adam Czajka <br>
 University of Notre Dame, Notre Dame IN 46556, USA <br>
 {aboyd3,ptinsley,kwb,aczajka}@nd.edu <br>
-<a href="https://openaccess.thecvf.com/content/WACV2023/papers/Boyd_CYBORG_Blending_Human_Saliency_Into_the_Loss_Improves_Deep_Learning-Based_WACV_2023_paper.pdf">Official Paper</a>
+<a href="https://openaccess.thecvf.com/content/WACV2023/papers/Boyd_CYBORG_Blending_Human_Saliency_Into_the_Loss_Improves_Deep_Learning-Based_WACV_2023_paper.pdf">Official Paper</a> <br> <br>
+<img src="figures/main_figure.png" alt="Front Page Figure">
 </p>
 
 ## Abstract
