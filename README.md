@@ -32,3 +32,14 @@ To the right is a comparison of training and validation accuracy for ResNet50 wi
 <p>
 Shown in this figure are the average CAMs across the entire test set for 10 independently trained ResNet50 models in three experimental settings. Each individual plot is the average CAM obtained for all test images for a given model. (Similar results can be observed for other CNN architectures, included into the supp. materials). Compared to the average human annotation, shown in Fig. 4(d), it is clear CYBORG models are guided effectively by human annotation.
 </p>
+<br> <br> <br> <br> <br> <br> <br> <br>
+
+## Usage
+<p>
+To create the CYBORG conda environment, run the following line of code:
+</p>
+
+    conda env create --file env.yaml
+    
+<p>
+</p>
