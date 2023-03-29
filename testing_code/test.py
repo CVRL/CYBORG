@@ -19,9 +19,9 @@ if __name__ == '__main__':
 
     device = torch.device('cuda')
     parser.add_argument('-imageFolder', default='../Data/',type=str)
-    parser.add_argument('-modelPath',  default='../model_output_paper/paper_models/densenet/cams_0.5/cams_0.51/Logs/final_model.pth',type=str)
-    parser.add_argument('-csv',  default="../csvs/gan_test_sets/stylegan2.csv",type=str)
-    parser.add_argument('-output_scores',  default="../model_output_paper/paper_models/densenet/cams_0.5/cams_0.51/local_results/",type=str)
+    parser.add_argument('-modelPath',  default='../local_results/final_model.pth',type=str)
+    parser.add_argument('-csv',  default="../csvs/test.csv",type=str)
+    parser.add_argument('-output_scores',  default="../local_results/",type=str)
     parser.add_argument('-network',  default="densenet",type=str)
     args = parser.parse_args()
 
