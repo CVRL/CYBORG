@@ -21,7 +21,7 @@ if __name__ == '__main__':
     parser.add_argument('-imageFolder', default='../Data/',type=str)
     parser.add_argument('-modelPath',  default='../local_results/final_model.pth',type=str)
     parser.add_argument('-csv',  default="../csvs/test.csv",type=str)
-    parser.add_argument('-output_scores',  default="../local_results/",type=str)
+    parser.add_argument('-output_scores',  default='../local_results/output_scores.csv',type=str)
     parser.add_argument('-network',  default="densenet",type=str)
     args = parser.parse_args()
 
@@ -101,7 +101,6 @@ if __name__ == '__main__':
         imagesScores.append([imgFile, PAScore[0]])
 
     # Writing the scores in the csv file
-    with open(args.output_scores,'w',newline='') as fout:
+    with open('output.csv','w',newline='') as fout:
         writer = csv.writer(fout)
         writer.writerows(imagesScores)
-
