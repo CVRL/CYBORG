@@ -36,10 +36,20 @@ Shown in this figure are the average CAMs across the entire test set for 10 inde
 
 ## Usage
 <p>
-To create the CYBORG conda environment, run the following line of code:
+(Note: must have a dedicated GPU to run the code) <br>
+To create and activate the CYBORG environment, run the following code:
 </p>
 
     conda env create --file env.yaml
+    conda activate CYBORG
     
 <p>
+To run the test code on the provided data, run the following code:
+</p>
+
+    cd testing_code
+    python3 test.py
+    
+<p>
+The scores for each of the images will be output to a CSV to view. The default paths for the output score destination and image source are provided at the top of test.py and may be modified
 </p>
