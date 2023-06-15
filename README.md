@@ -16,7 +16,7 @@ Can deep learning models achieve greater generalization if their training is gui
 ## Data Used
 <img src="figures/data_examples.png" width=50% align=right>
 <p>
-Two types of face image datasets are used: authentic datasets consisting of real images from three sources (CelebA-HQ, Flickr-Faces-HQ and FRGCSubset), and synthetic datasets consisting of fake images from seven different generators (ProGAN, StyleGAN, StyleGAN2, StyleGAN2-ADA, StyleGAN3, StarGANv2 and SREFI). The datasets are shown in the figure to the right.
+Two types of face image datasets are used: authentic datasets consisting of real images from three sources (CelebA-HQ, Flickr-Faces-HQ and FRGCSubset), and synthetic datasets consisting of fake images from seven different generators (ProGAN, StyleGAN, StyleGAN2, StyleGAN2-ADA, StyleGAN3, StarGANv2 and SREFI). The datasets are shown in the figure to the right. The data can be found <a href="https://cvrl.nd.edu/projects/data/">here</a>.
 </p>
 <br> <br>
 
