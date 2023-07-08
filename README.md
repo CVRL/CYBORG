@@ -19,7 +19,7 @@ Can deep learning models achieve greater generalization if their training is gui
 Two types of face image datasets are used: authentic datasets consisting of real images from three sources (CelebA-HQ, Flickr-Faces-HQ and FRGCSubset), and synthetic datasets consisting of fake images from seven different generators (ProGAN, StyleGAN, StyleGAN2, StyleGAN2-ADA, StyleGAN3, StarGANv2 and SREFI). The datasets are shown in the figure to the right. </p>
     
 ## Obtaining the Data
-<p>A copy of the dataset offered with the paper can be requested from the <a href="https://cvrl.nd.edu/projects/data/">University of Notre Dame Computer Vision Research Lab</a>. The title of the collection for this work is "UND WACV 2023 CYBORG".
+<p>A copy of the dataset offered with the paper can be requested from the <a href="https://cvrl.nd.edu/projects/data/#und-wacv-2023-cyborg">University of Notre Dame Computer Vision Research Lab</a>. The title of the collection for this work is "UND WACV 2023 CYBORG".
 </p>
 <br> <br>
 
