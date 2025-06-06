@@ -1,6 +1,11 @@
 import sys
 import torch
-import torchvision.models as models
+
+from torchvision.models import (
+    resnet50, ResNet50_Weights,
+    densenet121, DenseNet121_Weights,
+    inception_v3, Inception_V3_Weights
+)
 import torch.nn as nn
 import torchvision.transforms as transforms
 from PIL import Image
@@ -25,18 +30,23 @@ if __name__ == '__main__':
     parser.add_argument('-network',  default="densenet",type=str)
     args = parser.parse_args()
 
+
+
     os.makedirs(args.output_scores,exist_ok=True)
 
     # Load weights of single binary DesNet121 model
     weights = torch.load(args.modelPath)
     if args.network == "resnet":
         im_size = 224
-        model = models.resnet50(pretrained=True)
+        model = resnet50(weights=ResNet50_Weights.DEFAULT)
         num_ftrs = model.fc.in_features
         model.fc = nn.Linear(num_ftrs, 2)
     elif args.network == "inception":
         im_size = 299
-        model = models.inception_v3(pretrained=True,aux_logits=False)
+        model = inception_v3(
+            weights=Inception_V3_Weights.DEFAULT,  
+            aux_logits=False
+        )
         num_ftrs = model.fc.in_features
         model.fc = nn.Linear(num_ftrs, 2)
     elif args.network == "xception":
@@ -44,10 +54,10 @@ if __name__ == '__main__':
         model, *_ = model_selection(modelname='xception', num_out_classes=2)
     else: # else DenseNet
         im_size = 224
-        model = models.densenet121(pretrained=True)
+        model = densenet121(weights=DenseNet121_Weights.DEFAULT)  # Updated
         num_ftrs = model.classifier.in_features
         model.classifier = nn.Linear(num_ftrs, 2)
-    
+
     model.load_state_dict(weights['state_dict'])
     model = model.to(device)
     model.eval()
